@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" href="assets/images/favicon.svg" type="image/x-icon" />
-    <title>Settings | PlainAdmin Demo</title>
+    <title>Configurações</title>
 
     <!-- ========== All CSS files linkup ========= -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
@@ -25,15 +25,14 @@
     <aside class="sidebar-nav-wrapper">
       <div class="navbar-logo">
         <a href="index.html">
-          <img src="assets/images/logo/logo.svg" alt="logo" />
+          <img src="assets/images/logo/logo.png" alt="logo" />
         </a>
       </div>
       <nav class="sidebar-nav">
         <ul>
-          <li class="nav-item nav-item-has-children">
+          <li class="nav-item">
             <a
-              href="#0"
-              class="collapsed"
+              href="index.html"
               data-bs-toggle="collapse"
               data-bs-target="#ddmenu_1"
               aria-controls="ddmenu_1"
@@ -50,23 +49,23 @@
               </span>
               <span class="text">Dashboard</span>
             </a>
-            <ul id="ddmenu_1" class="collapse dropdown-nav">
+            <!-- <ul id="ddmenu_1" class="collapse show dropdown-nav">
               <li>
-                <a href="index.html"> eCommerce </a>
+                <a href="index.html" class="active"> eCommerce </a>
               </li>
-            </ul>
+            </ul> -->
           </li>
-          <li class="nav-item nav-item-has-children">
+           <li class="nav-item nav-item-has-children">
             <a
               href="#0"
-              class=""
+              class="collapsed"
               data-bs-toggle="collapse"
               data-bs-target="#ddmenu_2"
               aria-controls="ddmenu_2"
-              aria-expanded="true"
+              aria-expanded="false"
               aria-label="Toggle navigation"
-            >
-              <span class="icon">
+            > 
+               <span class="icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M11.8097 1.66667C11.8315 1.66667 11.8533 1.6671 11.875 1.66796V4.16667C11.875 5.43232 12.901 6.45834 14.1667 6.45834H16.6654C16.6663 6.48007 16.6667 6.50186 16.6667 6.5237V16.6667C16.6667 17.5872 15.9205 18.3333 15 18.3333H5.00001C4.07954 18.3333 3.33334 17.5872 3.33334 16.6667V3.33334C3.33334 2.41286 4.07954 1.66667 5.00001 1.66667H11.8097ZM6.66668 7.70834C6.3215 7.70834 6.04168 7.98816 6.04168 8.33334C6.04168 8.67851 6.3215 8.95834 6.66668 8.95834H10C10.3452 8.95834 10.625 8.67851 10.625 8.33334C10.625 7.98816 10.3452 7.70834 10 7.70834H6.66668ZM6.04168 11.6667C6.04168 12.0118 6.3215 12.2917 6.66668 12.2917H13.3333C13.6785 12.2917 13.9583 12.0118 13.9583 11.6667C13.9583 11.3215 13.6785 11.0417 13.3333 11.0417H6.66668C6.3215 11.0417 6.04168 11.3215 6.04168 11.6667ZM6.66668 14.375C6.3215 14.375 6.04168 14.6548 6.04168 15C6.04168 15.3452 6.3215 15.625 6.66668 15.625H13.3333C13.6785 15.625 13.9583 15.3452 13.9583 15C13.9583 14.6548 13.6785 14.375 13.3333 14.375H6.66668Z" />
@@ -74,18 +73,16 @@
                     d="M13.125 2.29167L16.0417 5.20834H14.1667C13.5913 5.20834 13.125 4.74197 13.125 4.16667V2.29167Z" />
                 </svg>
               </span>
-              <span class="text">Pages</span>
+              <span class="text">Páginas</span>
             </a>
-            <ul id="ddmenu_2" class="collapsed show dropdown-nav">
+            <ul id="ddmenu_2" class="collapse dropdown-nav">
               <li>
-                <a href="settings.html" class="active"> Settings </a>
+                <a href="settings.html"> Configurações</a>
               </li>
-              <li>
-                <a href="blank-page.html"> Blank Page </a>
-              </li>
+              
             </ul>
           </li>
-          <li class="nav-item">
+          <!--<li class="nav-item">
             <a href="invoice.html">
               <span class="icon">
                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -93,7 +90,7 @@
                     d="M3.33334 3.35442C3.33334 2.4223 4.07954 1.66666 5.00001 1.66666H15C15.9205 1.66666 16.6667 2.4223 16.6667 3.35442V16.8565C16.6667 17.5519 15.8827 17.9489 15.3333 17.5317L13.8333 16.3924C13.537 16.1673 13.1297 16.1673 12.8333 16.3924L10.5 18.1646C10.2037 18.3896 9.79634 18.3896 9.50001 18.1646L7.16668 16.3924C6.87038 16.1673 6.46298 16.1673 6.16668 16.3924L4.66668 17.5317C4.11731 17.9489 3.33334 17.5519 3.33334 16.8565V3.35442ZM4.79168 5.04218C4.79168 5.39173 5.0715 5.6751 5.41668 5.6751H10C10.3452 5.6751 10.625 5.39173 10.625 5.04218C10.625 4.69264 10.3452 4.40927 10 4.40927H5.41668C5.0715 4.40927 4.79168 4.69264 4.79168 5.04218ZM5.41668 7.7848C5.0715 7.7848 4.79168 8.06817 4.79168 8.41774C4.79168 8.76724 5.0715 9.05066 5.41668 9.05066H10C10.3452 9.05066 10.625 8.76724 10.625 8.41774C10.625 8.06817 10.3452 7.7848 10 7.7848H5.41668ZM4.79168 11.7932C4.79168 12.1428 5.0715 12.4262 5.41668 12.4262H10C10.3452 12.4262 10.625 12.1428 10.625 11.7932C10.625 11.4437 10.3452 11.1603 10 11.1603H5.41668C5.0715 11.1603 4.79168 11.4437 4.79168 11.7932ZM13.3333 4.40927C12.9882 4.40927 12.7083 4.69264 12.7083 5.04218C12.7083 5.39173 12.9882 5.6751 13.3333 5.6751H14.5833C14.9285 5.6751 15.2083 5.39173 15.2083 5.04218C15.2083 4.69264 14.9285 4.40927 14.5833 4.40927H13.3333ZM12.7083 8.41774C12.7083 8.76724 12.9882 9.05066 13.3333 9.05066H14.5833C14.9285 9.05066 15.2083 8.76724 15.2083 8.41774C15.2083 8.06817 14.9285 7.7848 14.5833 7.7848H13.3333C12.9882 7.7848 12.7083 8.06817 12.7083 8.41774ZM13.3333 11.1603C12.9882 11.1603 12.7083 11.4437 12.7083 11.7932C12.7083 12.1428 12.9882 12.4262 13.3333 12.4262H14.5833C14.9285 12.4262 15.2083 12.1428 15.2083 11.7932C15.2083 11.4437 14.9285 11.1603 14.5833 11.1603H13.3333Z" />
                 </svg>
               </span>
-              <span class="text">Invoice</span>
+              <span class="text">Menu1</span>
             </a>
           </li>
           <li class="nav-item nav-item-has-children">
@@ -114,19 +111,22 @@
                     d="M11.6383 15.18L15.805 11.0133C16.5373 10.2811 16.5373 9.09391 15.805 8.36166L11.6383 4.195C11.2722 3.82888 10.7923 3.64582 10.3125 3.64582V3.02082C10.3125 2.10035 11.0587 1.35416 11.9792 1.35416H16.9792C17.8997 1.35416 18.6458 2.10035 18.6458 3.02082V16.3542C18.6458 17.2747 17.8997 18.0208 16.9792 18.0208H11.9792C11.0587 18.0208 10.3125 17.2747 10.3125 16.3542V15.7292C10.7923 15.7292 11.2722 15.5461 11.6383 15.18Z" />
                 </svg>
               </span>
-              <span class="text">Auth</span>
+              <span class="text">Autenticação</span>
             </a>
             <ul id="ddmenu_3" class="collapse dropdown-nav">
               <li>
-                <a href="signin.html"> Sign In </a>
+                <a href="signin.html"> Entrar </a>
               </li>
               <li>
-                <a href="signup.html"> Sign Up </a>
+                <a href="signup.html"> Sair </a>
               </li>
             </ul>
-          </li>
+          </li> -->
+		 
           <span class="divider"><hr /></span>
+		  
           <li class="nav-item nav-item-has-children">
+		   
             <a
               href="#0"
               class="collapsed"
@@ -148,24 +148,138 @@
                     d="M10.8333 14.5834C10.8333 12.5123 12.5123 10.8334 14.5833 10.8334C16.6544 10.8334 18.3333 12.5123 18.3333 14.5834C18.3333 16.6545 16.6544 18.3334 14.5833 18.3334C12.5123 18.3334 10.8333 16.6545 10.8333 14.5834Z" />
                 </svg>
               </span>
-              <span class="text">UI Elements </span>
+			  
+              <span class="text">Filtros</span>
             </a>
             <ul id="ddmenu_4" class="collapse dropdown-nav">
-              <li>
-                <a href="alerts.html"> Alerts </a>
+              
+			  
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Filtros Salvos</summary>
+						  
+						 
+							  </br>
+							  <div style="margin-bottom: 0; padding-bottom: 0; line-height: 1;" class="form-check radio-style mb-20">
+								<input class="form-check-input" type="radio" value="" id="radio-1" />
+								<label style="margin-right: 5px; font-size: 13px;" class="form-check-label" for="radio-1">Filtro um</label>
+								
+							  </div>
+							  <!-- end radio -->
+							  <div class="form-check radio-style mb-20">
+								<input class="form-check-input" type="radio" value="" id="radio-2" disabled />
+								<label style="margin-right: 5px; font-size: 13px;" class="form-check-label" for="radio-2">
+								  Filtro dois</label>
+							  </div>
+							  <!-- end radio -->
+							  
+							  
+                  <!-- end radio -->
+					</details>
+				</a>
+				
+									
               </li>
               <li>
-                <a href="buttons.html"> Buttons </a>
+                <a href="#"> 
+					<details >
+					  <summary  > Período </summary>
+						 
+							  <h6></h6>
+							  <div class="input-style-1">
+								<label>De:</label>
+								<input type="date" />
+							  </div>
+							  <!-- end input -->
+							  <div class="input-style-1">
+							    <label>Até:</label>
+								<input type="date" />
+							  </div>
+							  <!-- end input -->
+							  
+					  <!-- end input -->
+						
+					</details>  
+				</a>
               </li>
               <li>
-                <a href="cards.html"> Cards </a>
+                <a href="#">  
+					<details >
+					  <summary  > NCM </summary>
+					  <div class="input-style-1">
+                    <label></label>
+                    <input type="text" placeholder="4 Digitos" />
+                  </div>
+					</details>  
+				</a>	  
               </li>
               <li>
-                <a href="typography.html"> Typography </a>
+                <a href="#"> 
+					<details >
+					  <summary  > Descrição do Produto </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Provável Importador </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Provável Exportador </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Provável Incoterm </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Modal </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Pais de Origem </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > Provável pais de Aquisição </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary  > UN Medida Comercializada Estimada </summary>
+					</details>  
+				</a>
+              </li>
+			  <li>
+                <a href="#"> 
+					<details >
+					  <summary class="nav-item nav-item-has-children" > URF de Entrada </summary>
+					</details>  
+				</a>
               </li>
             </ul>
           </li>
-          <li class="nav-item nav-item-has-children">
+          <!-- <li class="nav-item nav-item-has-children">
             <a
               href="#0"
               class="collapsed"
@@ -220,7 +334,7 @@
             </a>
             <ul id="ddmenu_5" class="collapse dropdown-nav">
               <li>
-                <a href="form-elements.html"> Form Elements </a>
+                <a href="form-elements.html"> From Elements </a>
               </li>
             </ul>
           </li>
@@ -238,7 +352,7 @@
               </span>
               <span class="text">Tables</span>
             </a>
-          </li>
+          </li> -->
           <span class="divider"><hr /></span>
 
           <li class="nav-item">
@@ -254,13 +368,13 @@
                   <path
                     d="M7.48901 17.1925C8.10004 17.8918 8.99841 18.3335 10 18.3335C11.0016 18.3335 11.9 17.8918 12.511 17.1925C10.8482 17.4634 9.15183 17.4634 7.48901 17.1925Z" />
                 </svg>
-              </span>
-              <span class="text">Notifications</span>
+              </span> 
+              <span class="text">Notificações</span>
             </a>
           </li>
         </ul>
       </nav>
-      <div class="promo-box">
+     <!--  <div class="promo-box">
         <div class="promo-icon">
           <img class="mx-auto" src="./assets/images/logo/logo-icon-big.svg" alt="Logo">
         </div>
@@ -269,7 +383,7 @@
         <a href="https://plainadmin.com/pro" target="_blank" rel="nofollow" class="main-btn primary-btn btn-hover">
           Upgrade to PRO
         </a>
-      </div>
+      </div> -->
     </aside>
     <div class="overlay"></div>
     <!-- ======== sidebar-nav end =========== -->
@@ -282,18 +396,25 @@
           <div class="row">
             <div class="col-lg-5 col-md-5 col-6">
               <div class="header-left d-flex align-items-center">
-                <div class="menu-toggle-btn mr-15">
+                <!-- <div class="menu-toggle-btn mr-15">
                   <button id="menu-toggle" class="main-btn primary-btn btn-hover">
                     <i class="lni lni-chevron-left me-2"></i> Menu
                   </button>
-                </div>
+                </div> -->
+				 
                 <div class="header-search d-none d-md-flex">
-                  <form action="#">
+				
+                  <!-- <form action="#">
                     <input type="text" placeholder="Search..." />
                     <button><i class="lni lni-search-alt"></i></button>
-                  </form>
+                  </form> -->
+				  
+				 
                 </div>
+				
               </div>
+			          <h6 class="fw-500">Bem Vinda ,Mariana!</h6>
+                   <p>Dashboard</p>
             </div>
             <div class="col-lg-7 col-md-7 col-6">
               <div class="header-right">
@@ -313,20 +434,19 @@
                   </button>
                   <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="notification">
                     <li>
-                      <a href="#0">
+                      <a href="notification.html">
                         <div class="image">
-                          <img src="assets/images/lead/lead-6.png" alt="" />
+                          <img src="assets/images/lead/lead-1.png" alt="" />
                         </div>
                         <div class="content">
                           <h6>
-                            John Doe
+                            Seu Plano
                             <span class="text-regular">
-                              comment on a product.
+                              
                             </span>
                           </h6>
                           <p>
-                            Lorem ipsum dolor sit amet, consect etur adipiscing
-                            elit Vivamus tortor.
+                            Seu Plano Contratado Search irá vencer em 10 dias. Para entrar em contato com nosso time de Customer Success
                           </p>
                           <span>10 mins ago</span>
                         </div>
@@ -339,9 +459,9 @@
                         </div>
                         <div class="content">
                           <h6>
-                            Jonathon
+                            Trax
                             <span class="text-regular">
-                              like on a product.
+                              
                             </span>
                           </h6>
                           <p>
@@ -373,23 +493,25 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-5.png" alt="" />
+                          <img src="assets/images/lead/lead-1.png" alt="" />
                         </div>
                         <div class="content">
-                          <h6>Jacob Jones</h6>
-                          <p>Hey!I can across your profile and ...</p>
-                          <span>10 mins ago</span>
+                          <h6>Processamento de Dados</h6>
+                          <p>Lorem ipsum dolor sit amet, consect etur adipiscing
+                            elit Vivamus tortor.</p>
+                          <span>04-09-2024</span>
                         </div>
                       </a>
                     </li>
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-3.png" alt="" />
+                          <img src="assets/images/lead/lead-1.png" alt="" />
                         </div>
                         <div class="content">
-                          <h6>John Doe</h6>
-                          <p>Would you mind please checking out</p>
+                          <h6>Dados Processados</h6>
+                          <p>Lorem ipsum dolor sit amet, consect etur adipiscing
+                            elit Vivamus tortor.</p>
                           <span>12 mins ago</span>
                         </div>
                       </a>
@@ -397,12 +519,13 @@
                     <li>
                       <a href="#0">
                         <div class="image">
-                          <img src="assets/images/lead/lead-2.png" alt="" />
+                          <img src="assets/images/lead/lead-1.png" alt="" />
                         </div>
                         <div class="content">
-                          <h6>Anee Lee</h6>
-                          <p>Hey! are you available for freelance?</p>
-                          <span>1h ago</span>
+                          <h6>Em Processamento</h6>
+                          <p>Lorem ipsum dolor sit amet, consect etur adipiscing
+                            elit Vivamus tortor.</p>
+                          <span>04-09-2024</span>
                         </div>
                       </a>
                     </li>
@@ -419,8 +542,8 @@
                           <img src="assets/images/profile/profile-image.png" alt="" />
                         </div>
                         <div>
-                          <h6 class="fw-500">Adam Joe</h6>
-                          <p>Admin</p>
+                          <h6 class="fw-500">Mariana</h6>
+                          <p>Usuário</p>
                         </div>
                       </div>
                     </div>
@@ -432,32 +555,31 @@
                           <img src="assets/images/profile/profile-image.png" alt="image">
                         </div>
                         <div class="content">
-                          <h4 class="text-sm">Adam Joe</h4>
-                          <a class="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs"
-                            href="#">Email@gmail.com</a>
+                          <h4 class="text-sm">Mariana</h4>
+                          <a class="text-black/40 dark:text-white/40 hover:text-black dark:hover:text-white text-xs" href="#">Email@gmail.com</a>
                         </div>
                       </div>
                     </li>
                     <li class="divider"></li>
+                    <!-- <li>
+                      <a href="settings.html">
+                        <i class="lni lni-user"></i> Ver Perfil
+                      </a>
+                    </li> -->
                     <li>
-                      <a href="#0">
-                        <i class="lni lni-user"></i> View Profile
+                      <a href="notification.html">
+                        <i class="lni lni-alarm"></i> Notificações
                       </a>
                     </li>
+                    <!-- <li>
+                      <a href="#0"> <i class="lni lni-inbox"></i> Mensagens </a>
+                    </li> -->
                     <li>
-                      <a href="#0">
-                        <i class="lni lni-alarm"></i> Notifications
-                      </a>
-                    </li>
-                    <li>
-                      <a href="#0"> <i class="lni lni-inbox"></i> Messages </a>
-                    </li>
-                    <li>
-                      <a href="#0"> <i class="lni lni-cog"></i> Settings </a>
+                      <a href="settings.html"> <i class="lni lni-cog"></i> Configurações </a>
                     </li>
                     <li class="divider"></li>
                     <li>
-                      <a href="#0"> <i class="lni lni-exit"></i> Sign Out </a>
+                      <a href="#0"> <i class="lni lni-exit"></i> Sair </a>
                     </li>
                   </ul>
                 </div>
@@ -477,7 +599,7 @@
             <div class="row align-items-center">
               <div class="col-md-6">
                 <div class="title">
-                  <h2>Settings</h2>
+                  <h2>Configurações</h2>
                 </div>
               </div>
               <!-- end col -->
@@ -486,11 +608,11 @@
                   <nav aria-label="breadcrumb">
                     <ol class="breadcrumb">
                       <li class="breadcrumb-item">
-                        <a href="#0">Dashboard</a>
+                        <a href="index.html">Dashboard</a>
                       </li>
-                      <li class="breadcrumb-item"><a href="#0">Pages</a></li>
+                      <li class="breadcrumb-item"><a href="#0">Páginas</a></li>
                       <li class="breadcrumb-item active" aria-current="page">
-                        Settings
+                        Meu Perfil
                       </li>
                     </ol>
                   </nav>
@@ -506,7 +628,7 @@
             <div class="col-lg-6">
               <div class="card-style settings-card-1 mb-30">
                 <div class="title mb-30 d-flex justify-content-between align-items-center">
-                  <h6>My Profile</h6>
+                  <h6>Meu Perfil</h6>
                   <button class="border-0 bg-transparent">
                     <i class="lni lni-pencil-alt"></i>
                   </button>
@@ -514,15 +636,15 @@
                 <div class="profile-info">
                   <div class="d-flex align-items-center mb-30">
                     <div class="profile-image">
-                      <img src="assets/images/profile/profile-1.png" alt="" />
+                      <img src="assets/images/profile/profile-image.png" alt="" />
                       <div class="update-image">
                         <input type="file" />
                         <label for=""><i class="lni lni-cloud-upload"></i></label>
                       </div>
                     </div>
                     <div class="profile-meta">
-                      <h5 class="text-bold text-dark mb-10">John Doe</h5>
-                      <p class="text-sm text-gray">Web & UI/UX Design</p>
+                      <h5 class="text-bold text-dark mb-10">Mariana </h5>
+                      <p class="text-sm text-gray">Administradora</p>
                     </div>
                   </div>
                   <div class="input-style-1">
@@ -530,17 +652,17 @@
                     <input type="email" placeholder="admin@example.com" value="admin@example.com" />
                   </div>
                   <div class="input-style-1">
-                    <label>Password</label>
+                    <label>Senha</label>
                     <input type="password" value="admin@example.com" />
                   </div>
                   <div class="input-style-1">
-                    <label>Website</label>
-                    <input type="text" placeholder="www.uideck.com" value="www.uideck.com" />
+                    <label>Site</label>
+                    <input type="text" placeholder="www.uideck.com" value="www.ExonTrade.com" />
                   </div>
                   <div class="input-style-1">
                     <label>Bio</label>
-                    <textarea placeholder="Write your bio here" rows="4">
-  Crafted for – Business, Startup, SaaS, Apps, Event, Software, Agency, Resume and Portfolio. All Landing Pages comes with clean design and responsive layout. Also packed with all essential sections, elements, and features you need to launch</textarea>
+                    <textarea placeholder="Write your bio here" rows="3">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer.
+  </textarea>
                   </div>
                 </div>
               </div>
@@ -551,14 +673,14 @@
             <div class="col-lg-6">
               <div class="card-style settings-card-2 mb-30">
                 <div class="title mb-30">
-                  <h6>My Profile</h6>
+                  <h6>Meu Perfil</h6>
                 </div>
                 <form action="#">
                   <div class="row">
                     <div class="col-12">
                       <div class="input-style-1">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Full Name" />
+                        <label>Nome Completo</label>
+                        <input type="text" placeholder="Nome Completo" />
                       </div>
                     </div>
                     <div class="col-12">
@@ -569,34 +691,35 @@
                     </div>
                     <div class="col-12">
                       <div class="input-style-1">
-                        <label>Company</label>
-                        <input type="text" placeholder="Company" />
+                        <label>Empresa</label>
+                        <input type="text" placeholder="Empresa" />
                       </div>
                     </div>
                     <div class="col-12">
                       <div class="input-style-1">
-                        <label>Address</label>
-                        <input type="text" placeholder="Address" />
+                        <label>Endereço</label>
+                        <input type="text" placeholder="Endereço" />
                       </div>
                     </div>
                     <div class="col-xxl-4">
                       <div class="input-style-1">
-                        <label>City</label>
-                        <input type="text" placeholder="City" />
+                        <label>Cidade</label>
+                        <input type="text" placeholder="Cidade" />
                       </div>
                     </div>
                     <div class="col-xxl-4">
                       <div class="input-style-1">
-                        <label>Zip Code</label>
-                        <input type="text" placeholder="Zip Code" />
+                        <label>CEP</label>
+                        <input type="text" placeholder="CEP" />
                       </div>
                     </div>
                     <div class="col-xxl-4">
                       <div class="select-style-1">
-                        <label>Country</label>
+                        <label>País</label>
                         <div class="select-position">
                           <select class="light-bg">
-                            <option value="">Select category</option>
+                            <option value="">Selecione</option>
+                            <option value="">Brasil</option>
                             <option value="">USA</option>
                             <option value="">UK</option>
                             <option value="">Canada</option>
@@ -606,15 +729,15 @@
                         </div>
                       </div>
                     </div>
-                    <div class="col-12">
+                    <!-- <div class="col-12">
                       <div class="input-style-1">
                         <label>About Me</label>
                         <textarea placeholder="Type here" rows="6"></textarea>
                       </div>
-                    </div>
+                    </div> -->
                     <div class="col-12">
                       <button class="main-btn primary-btn btn-hover">
-                        Update Profile
+                        Atualizar Perfil
                       </button>
                     </div>
                   </div>
@@ -637,9 +760,9 @@
             <div class="col-md-6 order-last order-md-first">
               <div class="copyright text-center text-md-start">
                 <p class="text-sm">
-                  Designed and Developed by
-                  <a href="https://plainadmin.com" rel="nofollow" target="_blank">
-                    PlainAdmin
+                  Desenvolvido por 
+                  <a href="#" rel="nofollow" target="_blank">
+                    Trax
                   </a>
                 </p>
               </div>
@@ -647,8 +770,8 @@
             <!-- end col-->
             <div class="col-md-6">
               <div class="terms d-flex justify-content-center justify-content-md-end">
-                <a href="#0" class="text-sm">Term & Conditions</a>
-                <a href="#0" class="text-sm ml-15">Privacy & Policy</a>
+                <a href="#0" class="text-sm">Termos e Condições</a>
+                <a href="#0" class="text-sm ml-15">Politica de Privacidade</a>
               </div>
             </div>
           </div>
