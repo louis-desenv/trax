@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "axZVRHIcp2snPCRHCDRh3ycR1DtoBpfvjOLX3k8UWp4=",
+  "Source": "Trax.WebAPI",
+  "BasePath": "_content/Trax.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
